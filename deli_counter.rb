@@ -12,8 +12,9 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, name)
-  puts "Welcome, #{name}. You are number #{index + 1} in line."
-
+  katz_deli << name
+  number = katz_deli.index + 1
+  puts "Welcome, #{name}. You are number #{number} in line."
 end
 
 def now_serving(katz_deli)
